@@ -1,15 +1,6 @@
-.watermark{
-  position: fixed;
-  bottom: 10px;
-  right: 12px;
-  font-size: 12px;
-  color: rgba(255,255,255,0.6);
-  background: rgba(0,0,0,0.4);
-  padding: 4px 10px;
-  border-radius: 12px;
-  z-index: 9999;
-  pointer-events: none;
-  font-family: Arial, sans-serif;
+.glitch .watermark{
+  color:#00ff00;
+  animation: glitchText 0.3s infinite;
 }
 
 *{
