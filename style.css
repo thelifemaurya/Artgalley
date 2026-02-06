@@ -1,1 +1,89 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
 
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#fbc2eb,#a6c1ee);
+  overflow:hidden;
+}
+
+/* POPUP */
+.popup{
+  position:fixed;
+  top:20px;
+  background:#000;
+  color:#fff;
+  padding:12px 18px;
+  border-radius:12px;
+  font-size:14px;
+  opacity:0;
+  animation: popupShow 4s ease forwards;
+  z-index:10;
+}
+
+@keyframes popupShow{
+  0%{opacity:0; transform:translateY(-20px)}
+  20%{opacity:1; transform:translateY(0)}
+  80%{opacity:1}
+  100%{opacity:0}
+}
+
+/* CARD */
+.page{
+  background:white;
+  padding:30px;
+  border-radius:16px;
+  text-align:center;
+  width:90%;
+  max-width:420px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.2);
+}
+
+button{
+  margin-top:22px;
+  padding:12px 22px;
+  border:none;
+  border-radius:22px;
+  background:#ff4f7b;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.hidden{
+  display:none;
+}
+
+/* GLITCH MODE */
+.glitch{
+  background:black;
+  color:#00ff00;
+  animation: shake 0.15s infinite;
+}
+
+.glitch-text{
+  animation: glitchText 0.3s infinite;
+}
+
+/* SHAKE */
+@keyframes shake{
+  0%{transform:translate(0)}
+  25%{transform:translate(5px,-5px)}
+  50%{transform:translate(-5px,5px)}
+  75%{transform:translate(5px,5px)}
+  100%{transform:translate(-5px,-5px)}
+}
+
+/* TEXT FLICKER */
+@keyframes glitchText{
+  0%{opacity:1}
+  50%{opacity:0.4}
+  100%{opacity:1}
+}
