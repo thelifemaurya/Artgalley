@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Art & Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- VOLUME POPUP -->
+  <div id="volumePopup" class="popup">
+    🔊 Please keep your volume at maximum<br>
+    for the best experience.
+  </div>
+
+  <!-- NORMAL PAGE -->
+  <div class="page" id="home">
+    <h1>🎨 Art & Creativity</h1>
+    <p>
+      Art is a beautiful way to express emotions, thoughts and imagination.
+      Explore our curated collections and creative visuals.
+    </p>
+    <button id="galleryBtn">Open Gallery 🖼️</button>
+  </div>
+
+  <!-- PRANK PAGE -->
+  <div class="page hidden glitch" id="prank">
+    <h1 class="glitch-text">SYSTEM ERROR</h1>
+    <p class="glitch-text">Gallery data corrupted 💀</p>
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="prankAudio" loop>
+    <source src="glitch.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
