@@ -1,8 +1,34 @@
-.glitch .watermark{
-  color:#00ff00;
-  animation: glitchText 0.3s infinite;
+.watermark-card{
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+
+  color: #ffffff;
+  background: rgba(0,0,0,0.55);
+
+  padding: 6px 12px;
+  border-radius: 14px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  backdrop-filter: blur(4px);
+
+  z-index: 9999;
+  pointer-events: none;
+
+  opacity: 0.85;
 }
 
+/* Glitch page pe thoda spooky touch */
+.glitch ~ .watermark-card,
+.glitch .watermark-card{
+  color: #00ff88;
+  background: rgba(0,0,0,0.7);
+  text-shadow: 0 0 6px rgba(0,255,136,0.6);
+}
 *{
   margin:0;
   padding:0;
